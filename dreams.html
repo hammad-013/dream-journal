@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Dreams</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="dreams.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <nav>
+      <a href="/index.html">  <img src="/images/logo-removebg-preview.png" /></a>
+          <h2>Realm Of Your Dreams</h2>
+       <a href="/dreams.html"> <button  class="button">Journalize</button></a>
+      </nav>
+     <div id="container">
+      <div id="dream">
+        <!-- <form id="dream-form" > -->
+        <input required
+          class="input-fields"
+          id="title"
+          type="text"
+          placeholder="Enter title of your dream"
+        />
+        <input required
+          class="input-fields"
+          id="description"
+          type="text"
+          placeholder="Enter description of your dream"
+        />
+        <input required
+          class="input-fields"
+          id="theme"
+          type="text"
+          placeholder="Enter theme of your dream (e.g. inspirational, nightmare)"
+        />
+        <input required
+          class="input-fields"
+          id="weather"
+          type="text"
+          placeholder="Enter weather of your dream (e.g. rainy, sunny)"
+        />
+        <input required
+          class="input-fields"
+          id="emotion"
+          type="text"
+          placeholder="Enter emotion of your dream (e.g. sad, happy)"
+        />
+        <input required
+        id="color"
+          type="color"
+          class="input-fields"
+          placeholder="Enter color according to your dream"
+        />
+        <input required class="input-fields" id="date" type="date" />
+        <h5>Rate your dream by vividness:</h5>
+        <input required id="rating"  class="input-fields" type="number">
+        
+        <button onclick="addDream()" class="button" id="save-dream" >Save Dream</button>
+      <!-- </form> -->
+      </div>
+      <!-- <a href="/view.html"><button>view</button></a> -->
+    </div>
+
+    <section id="dreams-list">
+      
+      
+
+    </section>
+
+    <footer>
+        <div>
+          <p>
+            Created By:
+            <a target="_blank" href="https://www.linkedin.com/in/hammad-shabbir7283"
+              >Hammad Shabbir</a
+            >
+            &
+            <a target="_blank" href="https://www.linkedin.com/in/muhammad-ahmad-51522a332"
+              >Muhammad Ahmad</a
+            >
+          </p>
+        </div>
+        <!-- <a href="https://www.linkedin.com/in/hammad-shabbir7283"><i class="fa-brands fa-linkedin"></i></a> -->
+      </footer>
+
+      <script src="script.js"></script>
+</body>
+</html>

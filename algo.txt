@@ -1,0 +1,10 @@
+1. empty array to store dreams
+2. get data from local storage
+3. get data from dream form when user click add
+4. store the dream to an object
+5. push that object to dreams array
+6. store array in the local storage
+7. show the data of object on the website inside a card
+8. user can delete the dream using button
+9. if clicked on the button, delete dream
+10. again save data to local storage
