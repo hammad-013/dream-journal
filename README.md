@@ -1,6 +1,5 @@
 # Dream Journal
 
-## Overview
 The Dream Journal is a personal web application for logging and analyzing dreams. Users can record their dreams with details such as title, description, emotions, themes, and visual elements like weather and colors. This helps users explore recurring patterns and themes over time.
 
 ## Features
@@ -16,6 +15,3 @@ The Dream Journal is a personal web application for logging and analyzing dreams
 ## Technologies Used
 - **HTML**, **CSS**, **JavaScript**: For structure, styling, and interactivity.
 
----
-
-Feel free to expand or modify the project for additional features!
