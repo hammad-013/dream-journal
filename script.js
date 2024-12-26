@@ -54,7 +54,7 @@ function displayDream() {
       <p><strong>Emotion:</strong> ${dream.emotion}</p>
       <p><strong>Weather:</strong> ${dream.weather}</p>
       <span style="display: flex; align-items:center;"><strong>Color Resembling Dream:</strong> <div class="color-box" style="width: 20px; height: 20px; display: inline-block; margin-left:20px; background-color: ${dream.color};"></div></span>
-      <p><strong>Vividness Rating:</strong> ${dream.rating}</p>
+      <p><strong>Vividness Rating:</strong> ${dream.rating}/100</p>
     `;
     document.getElementById("dreams-list").appendChild(card);
   })
