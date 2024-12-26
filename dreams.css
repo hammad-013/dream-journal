@@ -14,7 +14,7 @@
 }
 #dream{
     width: 500px;
-    height: 450px;
+    height: 480px;
     background-color: white;
     padding-block: 15px;
     padding-inline: 15px;
@@ -30,6 +30,16 @@
     outline: none;
     padding: 5px;
     margin-block: 7px;
+}
+#rating{
+    margin-bottom: 0px;
+}
+#dream>label{
+    font-weight: bold;
+}
+#range{
+    display: flex;
+    justify-content: space-between;
 }
  #dreams-list{
     /* width: 100%; */
