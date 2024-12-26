@@ -60,8 +60,12 @@
           placeholder="Enter color according to your dream"
         />
         <input required class="input-fields" id="date" type="date" />
-        <h5>Rate your dream by vividness:</h5>
-        <input required id="rating"  class="input-fields" type="number">
+        <label for="rating">Rate your dream by vividness:</label>
+        <!-- <input required id="rating"  class="input-fields" type="number"> -->
+         <input class="input-fields" type="range" name="rating" id="rating" step="5">
+         <div id="range">
+         <span>0</span>
+         <span>100</span></div>
         
         <button onclick="addDream()" class="button" id="save-dream" >Save Dream</button>
       <!-- </form> -->
