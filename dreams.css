@@ -5,12 +5,13 @@
     font-family: 'space grotesk';
 }
 #container{
-    background-color: black;
+    background-color: rgb(124, 124, 124);
     width: 100%;
-    height: calc(100vh - 160px);
+    height: calc(100vh - 80px);
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 #dream{
     width: 500px;
@@ -24,6 +25,11 @@
     margin-top: 12px;
     width: 120px;
 }
+#delete-dream{
+    width: 180px;
+    margin-top: 12px;
+}
+
 .input-fields{
     color: black;
     width: 100%;
