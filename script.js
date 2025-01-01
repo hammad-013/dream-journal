@@ -45,6 +45,7 @@ function displayDream() {
   dreamsData.forEach((dream) => {
     let card = document.createElement("div");
     card.className = "card";
+    
     card.innerHTML = `
       <h1>${dream.title}</h1>
       <hr>
@@ -55,9 +56,28 @@ function displayDream() {
       <p><strong>Weather:</strong> ${dream.weather}</p>
       <span style="display: flex; align-items:center;"><strong>Color Resembling Dream:</strong> <div class="color-box" style="width: 20px; height: 20px; display: inline-block; margin-left:20px; background-color: ${dream.color};"></div></span>
       <p><strong>Vividness Rating:</strong> ${dream.rating}/100</p>
+      
     `;
     document.getElementById("dreams-list").appendChild(card);
+    document.getElementById("title").value = ``;
+    document.getElementById("description").value = ``;
+    document.getElementById("theme").value = ``;
+    document.getElementById("weather").value = ``;
+    document.getElementById("emotion").value = ``;
+    document.getElementById("color").value = `#000000`;
+    document.getElementById("rating").value = `0`;
   })
+}
+function deleteLastDream() {
+  alert(`Deleted Dream With Title "${dreamsData[(dreamsData.length - 1)].title}"`);
+  dreamsData.pop();
+  displayDream(); 
+}
+function deleteFirstDream() {
+  alert(`Deleted Dream With Title "${dreamsData[0].title}"`);
+  dreamsData.shift();
+  displayDream();
+  
 }
 
 retrieveData();
