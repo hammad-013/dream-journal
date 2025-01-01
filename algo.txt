@@ -8,3 +8,4 @@
 8. user can delete the dream using button
 9. if clicked on the button, delete dream
 10. again save data to local storage
+11. when clicked on delete dream button, remove that from array and then remove that card from document flow 
