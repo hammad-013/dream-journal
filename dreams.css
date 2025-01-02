@@ -5,7 +5,7 @@
     font-family: 'space grotesk';
 }
 #container{
-    background-color: rgb(124, 124, 124);
+    background: white;
     width: 100%;
     height: calc(100vh - 80px);
     display: flex;
@@ -19,11 +19,19 @@
     background-color: white;
     padding-block: 15px;
     padding-inline: 15px;
+    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
+    /* box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px; */
+    border: 2px solid black;
+    margin-bottom: 30px;
     /* border-radius: 15px; */
 }
 #save-dream{
     margin-top: 12px;
     width: 120px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 5px;
+}
+#save-dream:hover{
+    transform: translateX(2px) translateY(-2px);
 }
 #delete-dream{
     width: 180px;
@@ -31,6 +39,7 @@
 }
 
 .input-fields{
+    background-color: white;
     color: black;
     width: 100%;
     outline: none;
@@ -50,7 +59,7 @@
  #dreams-list{
     /* width: 100%; */
     /* height: calc(100vh - 160px); */
-    background-color: rgb(0, 0, 0);
+    background: white;
     padding: 50px;
 } 
 
@@ -58,14 +67,16 @@
     padding: 15px;
     width: 300px;
     height: 350px;
+    border: 2px solid black;
     margin: 0 auto;
-    background-color: #F8FBFE;
+    background-color: white;
     /* border-radius: 8px; */
     display: inline-block;
     margin: 20px;
     overflow: scroll;
     position: relative;
-    /* box-shadow: inset; */
+    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
    }
    .card>h1{
     margin-bottom: 10px;
