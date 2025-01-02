@@ -69,13 +69,15 @@ function displayDream() {
   })
 }
 function deleteLastDream() {
-  alert(`Deleted Dream With Title "${dreamsData[(dreamsData.length - 1)].title}"`);
+  // alert(`Deleted Dream With Title "${dreamsData[(dreamsData.length - 1)].title}"`);
   dreamsData.pop();
+  saveData();
   displayDream(); 
 }
 function deleteFirstDream() {
-  alert(`Deleted Dream With Title "${dreamsData[0].title}"`);
+  // alert(`Deleted Dream With Title "${dreamsData[0].title}"`);
   dreamsData.shift();
+  saveData();
   displayDream();
   
 }
