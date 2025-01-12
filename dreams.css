@@ -1,90 +1,99 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'space grotesk';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "space grotesk";
 }
-#container{
-    background: white;
-    width: 100%;
-    height: calc(100vh - 80px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+#container {
+  background: url(images/4935872.jpg);
+  background-size: contain;
+  width: 100%;
+  height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 2px solid white;
 }
-#dream{
-    width: 500px;
-    height: 480px;
-    background-color: white;
-    padding-block: 15px;
-    padding-inline: 15px;
-    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
-    /* box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px; */
-    border: 2px solid black;
-    margin-bottom: 30px;
-    /* border-radius: 15px; */
+#dream {
+  width: 500px;
+  height: 480px;
+  background-color: white;
+  padding-block: 15px;
+  padding-inline: 15px;
+  border: 2px solid #007b7f;
+  margin-bottom: 30px;
 }
-#save-dream{
-    margin-top: 12px;
-    width: 120px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 5px;
+#save-dream {
+  margin-top: 12px;
+  width: 120px;
+  /* box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 5px; */
 }
-#save-dream:hover{
-    transform: translateX(2px) translateY(-2px);
+#save-dream:hover {
+  transform: translateX(2px) translateY(-2px);
 }
-#delete-dream{
-    width: 180px;
-    margin-top: 12px;
+#delete-dream {
+  background-color: white;
+  color: #007b7f;
+  width: 180px;
+  margin-top: 12px;
+  /* transition: all 0.1s linear; */
+}
+#delete-dream:hover{
+  transform: translate(2px,-2px);
 }
 
-.input-fields{
-    background-color: white;
-    color: black;
-    width: 100%;
-    outline: none;
-    padding: 5px;
-    margin-block: 7px;
+.input-fields {
+  background-color: white;
+  color: black;
+  width: 100%;
+  outline: none;
+  padding: 5px;
+  margin-block: 7px;
+  background-color: white;
 }
-#rating{
-    margin-bottom: 0px;
+#title:focus,#description:focus,#theme:focus,#weather:focus,#emotion:focus,#description:focus{
+    outline: 1.5px solid black;
 }
-#dream>label{
-    font-weight: bold;
+#rating {
+  margin-bottom: 0px;
+  accent-color: #007b7f;
 }
-#range{
-    display: flex;
-    justify-content: space-between;
+#dream > label {
+  font-weight: bold;
 }
- #dreams-list{
-    /* width: 100%; */
-    /* height: calc(100vh - 160px); */
-    background: white;
-    padding: 50px;
-} 
+#range {
+  display: flex;
+  justify-content: space-between;
+}
+#dreams-list {
+  background-color: #007b7f;
+  padding: 50px;
+}
 
 .card {
-    padding: 15px;
-    width: 300px;
-    height: 350px;
-    border: 2px solid black;
-    margin: 0 auto;
-    background-color: white;
-    /* border-radius: 8px; */
-    display: inline-block;
-    margin: 20px;
-    overflow: scroll;
-    position: relative;
-    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-   }
-   .card>h1{
-    margin-bottom: 10px;
-   }
-   .card>hr{
-    margin-bottom: 10px;
-   }
-   .card>p,span{
-    margin-bottom: 10px;
-   }
- 
+  padding: 15px;
+  width: 300px;
+  height: 350px;
+  color: #333;
+  border: 2px solid black;
+  margin: 0 auto;
+  background-color: white;
+  display: inline-block;
+  margin: 20px;
+  overflow: scroll;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.card > h1 {
+  margin-bottom: 10px;
+}
+.card > hr {
+  margin-bottom: 10px;
+  color: white;
+}
+.card > p,
+span {
+  margin-bottom: 10px;
+}
