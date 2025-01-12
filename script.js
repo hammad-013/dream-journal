@@ -1,10 +1,10 @@
+
 let dreamsData;
 
 function retrieveData() {
   if (localStorage.getItem("dreams") == null) {
     dreamsData = [];
-  }
-  else {
+  } else {
     dreamsData = JSON.parse(localStorage.getItem("dreams"));
   }
 }
@@ -31,21 +31,19 @@ function addDream() {
     emotion: Demotion.value,
     color: Dcolor.value,
     date: Ddate.value,
-    rating: Drating.value
+    rating: Drating.value,
   };
   dreamsData.push(dream);
   saveData();
   displayDream();
-
 }
-
 
 function displayDream() {
   document.getElementById("dreams-list").innerHTML = ``;
   dreamsData.forEach((dream) => {
     let card = document.createElement("div");
     card.className = "card";
-    
+
     card.innerHTML = `
       <h1>${dream.title}</h1>
       <hr>
@@ -65,21 +63,21 @@ function displayDream() {
     document.getElementById("weather").value = ``;
     document.getElementById("emotion").value = ``;
     document.getElementById("color").value = `#000000`;
+    document.getElementById("date").value = null;
     document.getElementById("rating").value = `0`;
-  })
+  });
 }
 function deleteLastDream() {
   // alert(`Deleted Dream With Title "${dreamsData[(dreamsData.length - 1)].title}"`);
   dreamsData.pop();
   saveData();
-  displayDream(); 
+  displayDream();
 }
 function deleteFirstDream() {
   // alert(`Deleted Dream With Title "${dreamsData[0].title}"`);
   dreamsData.shift();
   saveData();
   displayDream();
-  
 }
 
 retrieveData();
