@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SomniSphere</title>
-    <link rel="shortcut icon" href="/images/fav-icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/fav-icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,19 +12,27 @@
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
       rel="stylesheet"
     />
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    /> -->
   </head>
   <body>
+    <!-- <div id="login-page" >
+      <div id="login-card">
+        <h1>Login</h1>
+        <form id="login-form">
+          <p>Name:</p>
+        <input autofocus id="name" type="text">
+        <p>Password:</p>
+       <input id="pass" type="password">
+      <button id="login-button" type="submit">Login</button>
+    </form>
+      </div>
+    </div> -->
+    <section id="home-page" >
     <nav>
-     <a href="/index.html"> <img src="/images/logo-removebg-preview.png" /></a>
-        <h2>Realm Of Your Dreams</h2>
-     <a href="/dreams.html"> <button  class="button">Journalize Your Dreams</button></a>
+      <a href="/index.html"> <img src="/images/logo-removebg-preview.png" /></a>
+      <h2>Realm of Your Dreams</h2>
+      <a href="/dreams.html">
+        <button class="button">Journalize Your Dreams</button></a
+      >
     </nav>
     <div id="hero-bg"></div>
     <div id="hero-text">
@@ -34,7 +42,9 @@
         easy-to-use app. Record, find patterns, and learn from your dreams.
         Discover your inner world.
       </p>
-    <a href="/dreams.html">  <button  class="button hero-button">Journalize Your Dreams</button></a>
+      <a href="/dreams.html">
+        <button class="button hero-button">Journalize Your Dreams</button></a
+      >
     </div>
     <div id="section-2">
       <div><h1>Enter the Realm of Your Dreams, Discover Yourself</h1></div>
@@ -53,26 +63,43 @@
             subconscious better.
           </p>
         </div>
+        
       </div>
+      <button id="article-button" class="button" style=" margin-top: 20px; color: #007b7f; background-color: white;"><a href="/article.html">Learn More About Dreams</a></button>
+    </div>
+    <div id="section-3">
+     <div> <h1>Why Keep A Dream Journal?</h1></div>
+     <div id="sec-3body">
+      <div id="sec-3left">
+        <h2>Self-Discovery</h2>
+        <p>Dreams offer a window into your subconscious mind, revealing your deepest thoughts, fears, and desires.</p>
+      </div>
+      <div id="sec-3right">
+        <h2>Emotional Processing</h2>
+        <p>Dream journaling can help you process emotions and gain insight into your emotional state.</p>
+      </div>
+    </div>
     </div>
     <footer>
       <div>
         <p>
-          Created With ❤️ By:
-          <a target="_blank" href="https://www.linkedin.com/in/hammad-shabbir7283"
+          Created With ❣️ By:
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/hammad-shabbir7283"
             >Hammad Shabbir</a
           >
           &
-          <a target="_blank" href="https://www.linkedin.com/in/muhammad-ahmad-51522a332"
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/muhammad-ahmad-51522a332"
             >Muhammad Ahmad</a
           >
         </p>
       </div>
-      <!-- <a href="https://www.linkedin.com/in/hammad-shabbir7283"><i class="fa-brands fa-linkedin"></i></a> -->
     </footer>
-
-   
-
-    
+  </section>
+  <script
+   src="login.js"></script>
   </body>
 </html>
