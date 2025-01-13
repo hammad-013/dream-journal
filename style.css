@@ -170,7 +170,10 @@ nav > h2 {
 #section-2 > div > h1 {
   font-size: 4vw;
 }
-#section-2 > p {
+#sec2-b1 >p{
+  font-size: 1.4vw;
+}
+#sec2-b2 >p{
   font-size: 1.4vw;
 }
 
