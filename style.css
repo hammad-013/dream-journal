@@ -200,6 +200,9 @@ nav > h2 {
 #section-3 >div> h1{
   font-size: 4vw;
 }
+#section-3 >div> p{
+  font-size: 1.4vw;
+}
 footer {
   width: 100%;
   height: 50px;
