@@ -145,6 +145,7 @@ nav > h2 {
 
 #hero-text > p {
   font-size: 1.4vw;
+  font-weight: bold;
   line-height: 1.5;
   margin-bottom: 15px;
 }
